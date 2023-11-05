@@ -1,4 +1,329 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(85, 4, 17);
+    background-image: linear-gradient(rgba(0,0,44,0.5),rgba(0, 0, 44, 0.5)), url(./media/index-bg.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 2rem;
+}
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 1rem;
+}
+.header ul li {
+    list-style: none;
+}
+.header ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+.greeter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    text-align: end;
+}
+.greeter ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+.greeter ul li {
+    list-style: none;
+}
+.greeter ul li img {
+    width: 50px;
+    height: 50px;
+}
+.greeter ul li img:focus {
+    border: 1px solid white;
+    background-color: rgba(233, 218, 10, 0.6);
+    border-radius: 10px;
+}
+.greet {
+    font-size: 17px;
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px black;
+}
+#mario-greet {
+    color: rgb(205, 40, 40);
+}
+#luigi-greet {
+    color:rgb(76, 241, 103)
+}
+#yoshi-greet {
+    color: rgb(148, 196, 37);
+}
+#pikachu-greet {
+    color: rgb(238, 235, 75);
+}
+#bulbasaur-greet {
+    color: rgb(34, 202, 152);
+}
+#kirby-greet {
+    color: rgb(235, 119, 190);
+}
+#select {
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid white;
+    background-color: rgb(30, 43, 43);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#select:hover {
+    background-color: rgb(190, 178, 10);
+    color: black;
+    border-color: black;
+}
+#select, h4 {
+    margin-bottom: 2rem;
+}
+.choice {
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(190, 178, 10);
+    width: 150px;
+    border-radius: 10px;
+}
+.container {
+    padding: 1rem;
+}
+.tour {
+    border: 2px solid white;
+    background-color: rgb(30, 43, 43);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+.tour:hover {
+    background-color: rgb(190, 178, 10);
+    color: black;
+    border-color: black;
+}
+h1 {
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.half-container {
+    display: flex;
+    justify-content: center;
+    
+}
 #map {
     width: 600px;
-    height: 400px
+    height: 400px;
+    margin: auto;
+    border: 3px solid black;
+}
+#intro {
+    color: white;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px black;
+    width: 50vw;
+    padding: 1rem;
+    font-size: 30px;
+    font-family:sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#tour-stop-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    height: 15vh;
+}
+#tour-stop-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    height: 15vh;
+}
+#tour-stop-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    height: 15vh;
+}
+.stop1 {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+.stop2 {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+.stop3 {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+#guide1 {
+    height: 80px;
+    display: inline;
+}
+#guide2 {
+    height: 80px;
+    display: inline;
+}
+#guide3 {
+    height: 80px;
+    display: inline;
+}
+#dialog1 {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    display: inline;
+    width: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(190, 178, 10);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#dialog2 {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    display: inline;
+    width: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(190, 178, 10);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#dialog3 {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    display: inline;
+    width: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(190, 178, 10);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.hide1 {
+    display: none;
+}
+.hide2 {
+    display: none;
+}
+.hide3 {
+    display: none;
+}
+h2 {
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke: 0.1px black;
+}
+.grid-container {
+    gap: 10px 100px;
+    margin: auto;
+    width: 80vw;
+    height: 800px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+.grid {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+
+}
+.grid img {
+    width: 400px;
+    height: 370px;
+}
+
+.form-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.856);
+    border: 3px solid rgb(190, 178, 10);
+    margin-top: 1rem;
+}
+.form label {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 200px;
+}
+.form button {
+    font-size: 18px;
+    background-color: rgb(10, 118, 190);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form button:hover {
+    background-color: rgba(10, 118, 190, 0.521);
 }

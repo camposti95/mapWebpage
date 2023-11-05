@@ -1,0 +1,38 @@
+[
+    {
+        "tag": 0,
+        "name": "Mario",
+        "Greeting": "Hello! It's a me. Mario!",
+        "img": "./media/mario-guide.png"
+    },
+    {
+        "tag": 1,
+        "name": "Luigi",
+        "Greeting": "Woah! Hi! It's uh Luigi...",
+        "img": "./media/luigi-guide.png"
+    },
+    {
+        "tag": 2,
+        "name": "Yoshi",
+        "Greeting": "YOSHIIII",
+        "img": "./media/yoshi-guide.png"
+    },
+    {
+        "tag": 3,
+        "name": "Pikachu",
+        "Greeting": "Pika pika-chu!",
+        "img": "./media/pikachu-guide.png"
+    },
+    {
+        "tag": 4,
+        "name": "Bulbasaur",
+        "Greeting": "Bulbsauuur",
+        "img": "./media/bulbasaur-guide.png"
+    },
+    {
+        "tag": 5,
+        "name": "Kirby",
+        "Greeting": "HHHEEYY!",
+        "img": "./media/kirby-guide.png"
+    }
+]

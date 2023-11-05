@@ -3,20 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Map Webpage</title>
-    //leaflet files
+    <!-- leaflet files -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!-- jquery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    
-    <div id="map"></div>
-
+    <div class="header">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="greeter">
+        <h4>Pick your tour guide:</h4>
+        <ul id="greet-container">
+            <li>
+                <img src="./media/mario.gif" alt="" id="mario" tabindex="0">
+                <div id="mario-greet" class="greet"></div>
+            </li>
+            <li>
+                <img src="./media/luigi.gif" alt="" id="luigi" tabindex="0">
+                <div id="luigi-greet" class="greet"></div>
+            </li>
+            <li>
+                <img src="./media/yoshi.gif" alt="" id="yoshi" tabindex="0">
+                <div id="yoshi-greet" class="greet"></div>
+            </li>
+            <li>
+                <img src="./media/pikachu.gif" alt="" id="pikachu" tabindex="0">
+                <div id="pikachu-greet" class="greet"></div>
+            </li>
+            <li>
+                <img src="./media/bulbasaur.gif" alt="" id="bulbasaur" tabindex="0">
+                <div id="bulbasaur-greet" class="greet"></div>
+            </li>
+            <li
+                ><img src="./media/kirby.gif" alt="" id="kirby" tabindex="0">
+                <div id="kirby-greet" class="greet"></div>
+            </li>
+        </ul>
+        <button id="select">Select</button>
+    </div>
+    <div class="choice"></div>
+    <div class="container">
+        <h1>Dream Vacation: Tokyo, Japan</h1>
+        <div class="half-container">
+            <div id="map"></div>
+            <div id="intro">There is only one place that I have on my bucket list, one place that I wish to see before I leave this plane of existence. Tokyo, Japan. This is a webpage dedicated to the place I've been wanting to visit ever since I was 12 years old, so scroll down and enjoy!</div>
+        </div>
+        <div id="tour-stop-1">
+            <div>
+                <button id="tour1" class="tour">Press for Information</button>
+            </div>
+            <div class="hide1">
+                <div class="stop1">
+                    <img src="" alt="" id="guide1">
+                    <div id="dialog1">Tokyo is the capital of Japan, and the distance between San Antonio, Tx and Tokyo, Japan is 6,559 miles!</div>
+                </div>
+            </div>
+        </div>
+        <h2>What I'm excited to see and do:</h2>
+        <div class="grid-container">
+            <div class="grid food-picture"><img src="./media/ramen.jpg" alt=""></div>
+            <div class="grid food-description">Although there a lot of Ramen shops in San Antonio, I'm sure that there will a significant difference from the authenic ramen shops in Tokyo. I can't wait to try them all!!!</div>
+            <div class="grid sightseeing-description">Based off the pictures I see online, Japan seems SO different from anything I would see here in the United States. The parks, the mountains, even the nature. It all seems so different and wonderful.</div>
+            <div class="grid sightseeing-picture"><img src="./media/sightseeing.jpg" alt=""></div>
+        </div>
+        <div id="tour-stop-2">
+            <div>
+                <button id="tour2" class="tour">Press for Information</button>
+            </div>
+            <div class="hide2">
+                <div class="stop2">
+                    <img src="" alt="" id="guide2">
+                    <div id="dialog1">Did you know: As of 2022, Japan is home to more than 32,000 ramen shops.</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid amusement-parks"><img src="./media/nintendo-land.jpg" alt=""></div>
+            <div class="grid amusement-parks-description">One place I will for sure go for a full day is Universal Japan: Nintendo Land.</div>
+            <div class="grid arcade-description">There aren't good arcades left when I live, and I hear the ones in Japan are way different from the ones the United States. I would to go arcade hopping and try as many as I can.</div>
+            <div class="grid arcade-picture"><img src="./media/arcade.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="tour-stop-3">
+            <div>
+                <button id="tour3" class="tour">Press for Information</button>
+            </div>
+            <div class="hide3">
+                <div class="stop3">
+                    <img src="" alt="" id="guide3">
+                    <div id="dialog1">Let's get in contact, maybe we can plan a trip to Japan together?! Submit your contact information beloew.</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form class="form">
+                <label> Contact Information:</label>
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <input type="email" name="email" placeholder="email@address.com">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
+
+<!-- make a character that will user navigate the page, maybe make it fixed and 
+    displays responses when it is in a certain DOM view. JSON file -->
+    <!-- use the filter or map javascript methods -->
