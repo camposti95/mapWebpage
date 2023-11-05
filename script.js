@@ -68,13 +68,11 @@ function clearGreeter(i) {
 let selecetedCharacter
 greetContainer.addEventListener('click', function() {
     selecetedCharacter = document.activeElement.id
-    console.log(selecetedCharacter)
 })
 
 let tourGuide
 selectButtton.addEventListener('click', function() {
     tourGuide = selecetedCharacter
-    console.log(tourGuide)
     let tourGuideUpper = tourGuide.charAt(0).toUpperCase() +  tourGuide.slice(1)
     $('.choice').text(`You choose ${tourGuideUpper}!`).css({'padding':'1rem', 'border':'2px solid black'})
 })
